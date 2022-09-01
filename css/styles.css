@@ -59,7 +59,11 @@ nav > ul { margin-right: var(--size-30); }
 .btn-learn { 
   font-weight: 600;
   color: var(--primary); 
+  display: flex;
+  align-items: center;
 }
+
+.btn-learn > i { margin-left: 5px; }
 
 .hero-graphics {
   display: grid;
@@ -162,3 +166,50 @@ nav > ul { margin-right: var(--size-30); }
   height: var(--size-55);
 }
 
+/* Key Benefits Sections */
+.benefits-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.benefits-title {
+  font-size: var(--size-30);
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: var(--size-10);
+}
+
+.benefits-cards {
+  margin-top: var(--size-75);
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+}
+
+.benefits-card {
+  max-width: 235px;
+  min-height: 300px;
+  border: 1px solid transparent;
+  box-shadow: 0px 5px 10px #e2e2e7;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 300ms; /*Makes hover effect take 300ms so smooths it out*/
+}
+
+.benefits-card:hover {
+  transform: translateY(-5px)
+}
+
+.benefits img { width: var(--size-50); }
+
+.card-title { 
+  font-weight: 700; 
+  color: var(--black);
+}
+
+/* Get Started Section */

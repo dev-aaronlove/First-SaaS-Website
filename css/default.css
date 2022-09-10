@@ -96,3 +96,8 @@ ul > li {
   box-shadow: 0 0 var(--size-16) #7b7981;
   background-color: var(--white);
 }
+
+.active { 
+  color: var(--primary-light); 
+  font-weight: 500;
+}

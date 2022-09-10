@@ -5,11 +5,12 @@
   --default-font: #7a8997;
   --primary: #306aea;
   --primary-light: #6287d7;
+  --primary-dark: #0d1424;
   --success: #05b392;
   --default-background: #eaeaea;
   --section-background: #e4e5ea;
   --border-shadow: #e1e0e4;
-
+  
 
   --size-5: 0.3rem;
   --size-9: 0.563rem;
@@ -34,8 +35,10 @@
   --size-100: 6.25rem;
   --size-125: 7.813rem;
   --size-150: 9.375rem;
+  --size-175: 10.938rem;
   --size-200: 12.5rem;
   --size-225: 14.063rem;
+  --size-230: 14.375rem;
   --size-250: 15.625rem;
   --size-300: 18.75rem;
   --size-350: 21.875rem;
@@ -43,6 +46,7 @@
   --size-430: 26.875rem;
   --size-450: 28.125rem;
   --size-480: 30rem;
+  --size-500: 31.25rem;
   --size-550: 34.375rem;
   --size-650: 40.625rem;
   --size-675: 42.188rem;
@@ -61,9 +65,7 @@ body {
   color: var(--default-font);
 }
 
-.container {
-  padding: var(--size-30);
-}
+.container { padding: var(--size-30); }
 
 ul > li {
   list-style-type: none;

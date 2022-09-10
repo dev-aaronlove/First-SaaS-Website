@@ -61,6 +61,7 @@ nav > ul { margin-right: var(--size-30); }
   color: var(--primary); 
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn-learn > i { margin-left: var(--size-5); }
@@ -503,6 +504,161 @@ nav > ul { margin-right: var(--size-30); }
 }
 
 .pricing-graphic-info { max-width: var(--size-250); }
-
 .success-title { display: flex; }
 .success-title > div:last-child { margin-left: var(--size-10); }
+
+/* Hire Us Section */
+.hire-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: var(--size-100);
+  background-color: var(--primary-dark);
+  padding: var(--size-30);
+}
+
+.hire-testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hire-title {
+  color: var(--white);
+  font-size: var(--size-30);
+  font-weight: 700;
+  line-height: 2;
+}
+
+.hire-motto { 
+  width: var(--size-175);
+  line-height: 1.6;
+  padding-bottom: var(--size-30);
+  margin-bottom: var(--size-30);
+  border-bottom: 2px solid var(--default-font);
+}
+
+.hire-quote {
+  color: var(--white);
+  width: var(--size-350);
+  line-height: 1.6;
+  margin-bottom: var(--size-60);
+}
+
+.hire-signature {
+  color: var(--white);
+  font-size: var(--size-20);
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.hire-position { margin-bottom: var(--size-60); }
+
+.hire-people {
+  display: flex;
+  align-items: center;
+}
+
+.hire-people > img {
+  width: var(--size-50);
+  border-radius: var(--size-25);
+  margin-right: var(--size-30);
+}
+
+.hire-people > img:last-child { 
+  width: 75px; 
+  border-radius: 40px;
+}
+
+.contact-us {
+  padding: var(--size-30);
+  background-color: var(--white);
+  border-radius: var(--size-20);
+  min-height: var(--size-650);
+  max-width: var(--size-550);
+}
+
+.contact-title {
+  color: var(--black);
+  font-size: var(--size-18);
+  font-weight: 700;
+  margin-bottom: var(--size-5);
+}
+
+input,
+select,
+textarea {
+  margin: var(--size-14) 0;
+  padding: var(--size-12) var(--size-5);
+  padding-right: var(--size-30);
+  color: var(--default-font);
+  border: 1px solid var(--default-font);
+  border-radius: var(--size-5);
+  font-size: var(--size-16);
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper > i {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  color: var(--black);
+  z-index: 0;
+}
+
+select { 
+  min-width: var(--size-230); 
+  font-weight: 700;
+  color: var(--black);
+  appearance: none;
+  background: transparent;
+  z-index: 10;
+}
+
+textarea { 
+  width: 100%; 
+  resize: none;
+}
+
+.name,
+.contact-info,
+.other-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-footer { display: flex; }
+
+.checkbox { margin-right: var(--size-20); }
+
+input[type="checkbox"] {
+  width: var(--size-25);
+  height: var(--size-25);
+}
+
+.agreement > div { margin-bottom: var(--size-10); }
+.agreement-statement { line-height: 1.6; }
+.policies { display: flex; }
+
+.policies > div {
+  font-weight: 700;
+  margin-right: var(--size-40);
+  padding-bottom: 2px;
+  /* take control of spacing between dashes in bottom border: */
+  background-image: linear-gradient(to right, black 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 7px 1px;
+  background-repeat: repeat-x;
+}
+
+.policies > div:last-child { color: var(--primary); }
+
+.submit-wrapper {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.submit { text-align: center; }

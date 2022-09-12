@@ -1,8 +1,20 @@
 /* Sticky Nav Bar */
+/* TODO: CREATE MENU BTN */
 .top-nav { 
   display: flex; 
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  height: var(--size-75);
+  width: 100%;
+  z-index: 20;
+  transition: ease-in-out 0.3s;
+}
+
+.top-nav.sticky {
+  background-color: var(--sticky-background);
+  box-shadow: 0px 0px 20px var(--sticky-background);
 }
 
 .company-logo > img { width: var(--size-150); }
@@ -21,9 +33,9 @@ nav { display: flex; }
 nav > ul { margin-right: var(--size-30); }
 
 /* Hero Section */
-
+/* TODO: CREATE COOL BACKGROUND GRAPHIC */
 .hero { 
-  margin: var(--size-75) 0; 
+  margin: var(--size-200) 0; 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /*in px because based on viewport*/
   gap: var(--size-40);
@@ -65,7 +77,7 @@ nav > ul { margin-right: var(--size-30); }
 }
 
 .btn-learn > i { margin-left: var(--size-5); }
-
+/* TODO: BUBBLE UP GRAPHICS AT DIFFERENT TIMES */
 .hero-graphics {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -259,7 +271,7 @@ nav > ul { margin-right: var(--size-30); }
   justify-content: flex-end;
   align-items: flex-end;
 }
-
+/* TODO: BANNER ANIMATION - FLOAT UP */
 .start-banner img {
   max-height: 3var(--size-50);
   width: var(--size-700);
@@ -484,6 +496,7 @@ nav > ul { margin-right: var(--size-30); }
 
 .pricing-disclaimer { margin-top: var(--size-10); }
 
+/* TODO: ANIMATION FLOAT UP. PREFERABLY TOP TWO CARDS APPEAR JUST BEFORE BOTTOM TWO CARDS */
 .pricing-graphics-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -552,7 +565,7 @@ nav > ul { margin-right: var(--size-30); }
 }
 
 .hire-position { margin-bottom: var(--size-60); }
-
+/* TODO: ANIMATION CYCLE THROUGH WHICH PERSON IMG IS LARGER.  */
 .hire-people {
   display: flex;
   align-items: center;
@@ -772,3 +785,22 @@ input[type="checkbox"] {
   margin: 0 auto;
   text-align: center;
 }
+
+/* to top btn */
+#scrollUp {
+  background: var(--border-shadow);
+  border-radius: 25px;
+  color: var(--default-font);
+  font-size: var(--size-14);
+  height: var(--size-50);
+  width: var(--size-50);
+  line-height: var(--size-50);
+  position: fixed;
+  bottom: var(--size-30);
+  right: var(--size-30);
+  text-align: center;
+  cursor: pointer;
+  z-index: 20;
+}
+
+#scrollUp:hover { box-shadow: 0px 0px 20px var(--default-font); }

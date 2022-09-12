@@ -10,6 +10,7 @@
   --default-background: #eaeaea;
   --section-background: #e4e5ea;
   --dark-background: #677787;
+  --sticky-background: #dee4ec;
   --border-shadow: #e1e0e4;
   
 
@@ -58,7 +59,11 @@
 }
 
 /* default styles */
-* {box-sizing: border-box;}
+*,
+::after,
+::before {box-sizing: border-box;}
+
+html { scroll-behavior: smooth; }
 
 html,
 body {

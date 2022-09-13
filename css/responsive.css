@@ -1,0 +1,42 @@
+@media screen and (max-width: 768px) { /* only for the screen, not print */
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul,
+  [aria-expanded="false"] ~ div {
+    display: none;
+  }
+
+  nav > ul,
+  nav > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    position: absolute;
+    right: 0;
+    font-weight: 700;
+    color: var(--black);
+  }
+
+  nav > ul { 
+    top: var(--size-80); 
+    height: var(--size-150);
+  }
+
+  nav > div { 
+    top: 260px; 
+    right: 2%;
+  } 
+
+  nav > ul > li {
+    background-color: var(--default-background);
+    border-radius: var(--size-15);
+    padding: var(--size-5);
+    width: var(--size-80);
+    text-align: center;
+    margin: 2px;
+  }
+
+}

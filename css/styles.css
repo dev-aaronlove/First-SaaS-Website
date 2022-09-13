@@ -1,5 +1,43 @@
+/* Top Background */
+.top-background {
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
 /* Sticky Nav Bar */
-/* TODO: CREATE MENU BTN */
+/* TODO: format menu options for smaller screens */
+.navbar-toggler {
+  position: absolute;
+  right: var(--size-20);
+  top: var(--size-10);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+.navbar-toggler span {
+  color: var(--default-font);
+  font-size: var(--size-20);
+  cursor: pointer;
+  pointer-events: none; /*span doesn't block the click event*/
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
 .top-nav { 
   display: flex; 
   justify-content: space-between;
@@ -33,7 +71,6 @@ nav { display: flex; }
 nav > ul { margin-right: var(--size-30); }
 
 /* Hero Section */
-/* TODO: CREATE COOL BACKGROUND GRAPHIC */
 .hero { 
   margin: var(--size-200) 0; 
   display: grid;
@@ -215,7 +252,7 @@ nav > ul { margin-right: var(--size-30); }
 }
 
 .benefits-card:hover {
-  transform: translateY(-var(--size-5))
+  transform: translateY(var(--size-5))
 }
 
 .benefits img { width: var(--size-50); }

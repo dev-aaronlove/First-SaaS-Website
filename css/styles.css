@@ -8,12 +8,6 @@
   min-height: 100%;
   min-width: 100%;
 }
-/* 
-svg {
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-} */
 
 /* Sticky Nav Bar */
 .navbar-toggler {
@@ -137,6 +131,12 @@ nav > ul { margin-right: var(--size-30); }
   padding: var(--size-9);
   grid-column: 4;
   margin-left: 20px;
+  animation: moveGoogle 2s ease-in-out;
+}
+
+@keyframes moveGoogle {
+  from { transform: translateY(13em); }
+  to { transform: translateY(0);}
 }
 
 .google div img {
@@ -149,6 +149,12 @@ nav > ul { margin-right: var(--size-30); }
   height: var(--size-90);
   padding: var(--size-14);
   grid-column: 6;
+  animation: moveAtlassian 3s ease-in-out;
+}
+
+@keyframes moveAtlassian {
+  from { transform: translateY(10em); }
+  to { transform: translateY(0);}
 }
 
 .atlassian div img {
@@ -161,6 +167,12 @@ nav > ul { margin-right: var(--size-30); }
   height: var(--size-90);
   padding: var(--size-12);
   grid-column: 10;
+  animation: moveAsana 2.5s ease-in-out;
+}
+
+@keyframes moveAsana {
+  from { transform: translateY(16em); }
+  to { transform: translateY(0);}
 }
 
 .asana div img {
@@ -175,6 +187,12 @@ nav > ul { margin-right: var(--size-30); }
   grid-row: 4;
   grid-column: 4;
   margin-top: 40px;
+  animation: movePaypal 2.5s ease-in-out;
+}
+
+@keyframes movePaypal {
+  from { transform: translateY(16em); }
+  to { transform: translateY(0);}
 }
 
 .paypal div img {
@@ -189,6 +207,12 @@ nav > ul { margin-right: var(--size-30); }
   grid-row: 4;
   grid-column: 8;
   margin-top: 40px;
+  animation: moveWeave 3.5s ease-in-out;
+}
+
+@keyframes moveWeave {
+  from { transform: translateY(6em); }
+  to { transform: translateY(0);}
 }
 
 .weave div img {
@@ -202,6 +226,12 @@ nav > ul { margin-right: var(--size-30); }
   padding: var(--size-9);
   grid-row: 8;
   grid-column: 5;
+  animation: moveGoogleAds 4s ease-in-out;
+}
+
+@keyframes moveGoogleAds {
+  from { transform: translateY(9em); }
+  to { transform: translateY(0);}
 }
 
 .google-ads div img {
@@ -216,6 +246,12 @@ nav > ul { margin-right: var(--size-30); }
   grid-row: 8;
   grid-column: 10;
   margin-top: 20px;
+  animation: moveCalendar 2.5s ease-in-out;
+}
+
+@keyframes moveCalendar {
+  from { transform: translateY(5em); }
+  to { transform: translateY(0);}
 }
 
 .calendar div img {
@@ -617,15 +653,21 @@ nav > ul { margin-right: var(--size-30); }
   align-items: center;
 }
 
+
 .hire-people > img {
   width: var(--size-50);
   border-radius: var(--size-25);
   margin-right: var(--size-30);
 }
 
-.hire-people > img:last-child { 
-  width: 75px; 
-  border-radius: 40px;
+.hire-people > img { animation: enlarge 6s infinite alternate; }
+
+.hire-people > img:nth-child(1) { animation-delay: 0; }
+.hire-people > img:nth-child(2) { animation-delay: 3s; }
+.hire-people > img:nth-child(3) { animation-delay: 6s; }
+
+@keyframes enlarge {
+  to { transform: scale(1.5); }
 }
 
 .contact-us {

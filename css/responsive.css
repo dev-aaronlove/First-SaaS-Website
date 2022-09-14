@@ -1,4 +1,6 @@
+/* Tablet Responsive */
 @media screen and (max-width: 768px) { /* only for the screen, not print */
+  
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -39,4 +41,199 @@
     margin: 2px;
   }
 
+  .start-wrapper,
+  .start-prompt { 
+    align-items: center; 
+    width: 100%;
+    padding: 0;
+  }
+  
+  .start-prompt-description {
+    text-align: center;
+    padding: var(--size-20);
+  }
+
+  .start-banner { margin-top: var(--size-25); }
+  .start-banner > img { width: 100%; }
+
+  /* TODO: FIX LINES BETWEEN WHY FRONT GRAPHICS */
+
+  .profile-review-wrapper { align-items: center; }
+  .profile-review { text-align: center; }
+
+  .pricing-action-card,
+  .pricing-description { 
+    min-width: 100%; 
+    align-items: center;
+    text-align: center;
+  }
+
+  .hire-testimonial { 
+    flex-direction: row; 
+    justify-content: space-around;
+  }
+
+  .hire-testimonial > div:last-child { margin-top: var(--size-50); }
+  .hire-motto { width: 100%; }
+  .contact-us { margin: 0 auto; }
+
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 376px) {
+  .container { padding: 30px 5px; }
+
+  .hero { margin: var(--size-25) 0; }
+  .hero-ad { width: var(--size-330); }
+  .hero-description { text-align: center; }
+
+  .hero-graphics {
+    row-gap: 0;
+    margin-right: 0;
+    max-height: 364px;
+    width: var(--size-330);
+  }
+
+  .google {
+    margin-left: 0;
+    grid-column: 1;
+  }
+
+  .atlassian { grid-column: 2; }
+
+  .asana {
+    margin-left: var(--size-40);
+    grid-column: 3;
+  }
+
+  .paypal {
+    grid-row: 2;
+    grid-column: 1;
+    margin-top: var(--size-40);
+  }
+
+  .weave {
+    grid-row: 2;
+    grid-column: 3;
+    margin-top: var(--size-40);
+  }
+
+  .google-ads {
+    grid-row: 5;
+    grid-column: 2;
+  }
+
+  .calendar {
+    grid-row: 5;
+    grid-column: 3;
+    margin-top: var(--size-20);
+    margin-left: var(--size-40);
+  }
+
+  .benefits-description { text-align: center; }
+
+  .get-started { margin: 0; }
+  .start-wrapper { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+  .why-header-description { width: 100%; }
+  .why-component:nth-child(1)::after,
+  .why-component:nth-child(2)::after, 
+  .why-component:nth-child(3)::after { border: 1px solid transparent; }
+
+  .why-components {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: var(--size-300);
+  }
+
+  .why-component {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+    align-items: center;
+  }
+
+  .why-name { margin-left: var(--size-40); }
+  .why-banner-wrapper { width: 120%; }
+  .person > img { width: 80%; }
+  
+  .dots-graphics { 
+    top: 70px; 
+    left: 20px; 
+  }
+  
+  .dots-graphics > img { width: 42%; }
+  .profile-review-wrapper { padding-top: 0; }
+  .profile-review { max-width: var(--size-300);}
+  .companies-wrapper { max-width: 94%; }
+  .companies-section > div { margin: 0; }
+  .companies-header { text-align: center; }
+  .pricing-header-description { text-align: center; }
+
+  .pricing-graphics-cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: var(--size-50);
+  }
+
+  .pricing-graphic-info { max-width: 100%; }
+
+  .hire-testimonial {
+    flex-direction: column;
+    text-align: center;
+    width: var(--size-300);
+  }
+
+  .hire-quote { width: var(--size-300); }
+
+  .hire-people { 
+    margin-left: 25px;
+    justify-content: center; }
+
+  .name, 
+  .contact-info, 
+  .other-info { flex-direction: column; }
+
+  form input, 
+  form select {
+    width: var(--size-250);
+  }
+
+  .contact-us {
+    max-width: 330px;
+    margin: 0px -20px;
+  }
+
+  textarea { width: 93%; }
+  .policies { flex-direction: column; }
+  .policies > div { width: 70%; }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact { 
+    align-items: center; 
+    margin-bottom: var(--size-20);
+  }
+  
+  .options-rows > div { justify-content: center; }
+
+  .actions-row { flex-direction: column; }
+  .actions-left { text-align: center; }
+
+  .actions-right {
+    flex-direction: row;
+    min-width: var(--size-300);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-media-wrapper { margin: var(--size-30) 0; }
+  .actions-select-wrapper,
+  .copyright-row { margin-bottom: var(--size-30); }
+  .copyright-row { text-align: center; }
 }

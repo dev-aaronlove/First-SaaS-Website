@@ -402,8 +402,8 @@ nav > ul { margin-right: var(--size-30); }
   content: '';
   position: absolute;
   bottom: 72%;
-  left: var(--size-200);
-  width: 83%;
+  left: 70%;
+  width: 70%;
   border-top: 2px solid var(--section-background);
   z-index: -1;
 }

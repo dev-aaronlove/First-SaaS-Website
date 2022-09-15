@@ -1,6 +1,15 @@
 /* Tablet Responsive */
 @media screen and (max-width: 768px) { /* only for the screen, not print */
-  
+  .start-wrapper,
+  .start-prompt,
+  .start-banner > img,
+  .pricing-action-card,
+  .pricing-description,
+  .hire-motto,
+  .why-header-description,
+  .pricing-graphic-info { width: 100%;}
+
+
   [aria-controls="navbarDropdown"] {
     display: block;
   }
@@ -42,11 +51,7 @@
   }
 
   .start-wrapper,
-  .start-prompt { 
-    align-items: center; 
-    width: 100%;
-    padding: 0;
-  }
+  .start-prompt { padding: 0; }
   
   .start-prompt-description {
     text-align: center;
@@ -54,16 +59,11 @@
   }
 
   .start-banner { margin-top: var(--size-25); }
-  .start-banner > img { width: 100%; }
-
-  /* TODO: FIX LINES BETWEEN WHY FRONT GRAPHICS */
-
   .profile-review-wrapper { align-items: center; }
   .profile-review { text-align: center; }
 
   .pricing-action-card,
   .pricing-description { 
-    min-width: 100%; 
     align-items: center;
     text-align: center;
   }
@@ -74,7 +74,6 @@
   }
 
   .hire-testimonial > div:last-child { margin-top: var(--size-50); }
-  .hire-motto { width: 100%; }
   .contact-us { margin: 0 auto; }
 
 }
@@ -134,7 +133,6 @@
 
   .get-started { margin: 0; }
   .start-wrapper { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
-  .why-header-description { width: 100%; }
   .why-component:nth-child(1)::after,
   .why-component:nth-child(2)::after, 
   .why-component:nth-child(3)::after { border: 1px solid transparent; }
@@ -176,8 +174,6 @@
     grid-template-rows: 1fr 1fr 1fr 1fr;
     gap: var(--size-50);
   }
-
-  .pricing-graphic-info { max-width: 100%; }
 
   .hire-testimonial {
     flex-direction: column;

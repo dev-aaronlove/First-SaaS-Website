@@ -1,5 +1,7 @@
 /* Top Background */
 .top-background {
+  background-image: url('../saas-project-assets/abstract/abstract-envelope.svg');
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: -2;

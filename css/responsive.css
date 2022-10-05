@@ -1,3 +1,10 @@
+/* Large Monitors */
+@media screen and (min-width: 1600px) {
+  .start-wrapper,
+  .pricing-info-wrapper,
+  .hire-section { justify-items: center; }
+}
+
 /* Tablet Responsive */
 @media screen and (max-width: 768px) { /* only for the screen, not print */
   .start-wrapper,
@@ -8,7 +15,8 @@
   .hire-motto,
   .why-header-description,
   .pricing-graphic-info { width: 100%;}
-
+  
+  .start-prompt { align-items: center; }
 
   [aria-controls="navbarDropdown"] {
     display: block;
